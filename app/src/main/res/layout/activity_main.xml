@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/app_title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="14"
+        android:background="#4CAF50"
+        android:orientation="vertical"
+        android:padding="8dp">
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_alignParentTop="true"
+            android:fontFamily="cursive"
+            android:text="ANDROID QUIZ APP"
+            android:textSize="42sp" />
+        <TextView
+            android:id="@+id/score_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="#000000"
+            android:fontFamily="monospace"
+            android:text="score_0"
+            android:textColor="#ffb940"
+            android:textSize="24sp" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/question_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="3"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:orientation="vertical"
+                android:layout_height="match_parent"
+                android:layout_marginTop="4sp"
+                android:layout_marginBottom="8sp">
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:text="QUESTIONS:1"
+                    android:layout_marginBottom="2sp"/>
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:text="Which of the following characteristics define(s) Androids?" />
+
+                <RadioGroup
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:id="@+id/option_group_1" >
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/option_1A"
+                        android:text="Linux kernel-based system used on Smart watches. LEDs etc." />
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/option_1B"
+                        android:text="Closed source open system used on mobiles." />
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/option_1C"
+                        android:text="Operating System, middleware and some key application." />
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="4sp"
+                android:layout_marginBottom="8sp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:text="QUESTION:2"
+                    android:layout_marginBottom="2sp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:text="What is the meaning of ALC" />
+
+                <RadioGroup
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:id="@+id/option_group_2"
+                    >
+                    <RadioButton
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:id="@+id/option_2A"
+                        android:text="Angela Learner Community" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/option_2B"
+                        android:text="Angular Learner Community" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/option_2C"
+                        android:text ="Andela Learning Community" />
+                </RadioGroup>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:layout_marginBottom="4sp"
+                android:layout_marginTop="2sp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:text="Question:3" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="What is the Full meaning of SDK" />
+
+                <EditText
+                    android:id="@+id/answer_Q3"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:inputType="textCapWords"
+                    android:text="                                            " />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_height="match_parent"
+                android:layout_width="wrap_content"
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:text="Question 4" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:text="All of the following are the building building blocks of Android except?" />
+
+                <RadioGroup
+                    android:id="@+id/option_group_4"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent">
+
+                    <RadioButton
+                        android:id="@+id/option_4A"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Network" />
+
+                    <RadioButton
+                        android:id="@+id/option_4B"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Service" />
+
+                    <RadioButton
+                        android:id="@+id/option_4C"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Activity" />
+                </RadioGroup>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:text="Question: 5" />
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:text="What is the full meaning of ISP" />
+
+
+                <CheckBox
+                    android:id="@+id/option_5A"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:text="Internet Service Producer"/>
+
+                <CheckBox
+                    android:id="@+id/option_5B"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:text="Internet Service Product " />
+
+                <CheckBox
+                    android:id="@+id/option_5C"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:text="Internet Service Provider" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_width="2dp"
+            android:background="#ffb940"
+            android:onClick="resetAnswers"
+            android:text="RESET" />
+
+        <Button
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_width="2dp"
+            android:background="#4CAF50"
+            android:onClick="submitAnswers"
+            android:text="SUBMIT" />
+    </LinearLayout>
+
+
+</LinearLayout>
